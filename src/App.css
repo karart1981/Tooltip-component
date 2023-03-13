@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display:flex;
+  place-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: rgb(24, 155, 155);
+}
+
+.app{
+  display:flex;
+}
+
+.tooltip-container{
+	position:relative;
+	display:inline-block;
+}
+
+.tooltip{
+  position:absolute;
+  top:calc(-100% -50px);
+  transform:translate(-50% -50%);
+  background-color:rgba(0,0,0,0.8);
+  color:white;
+  padding: 10px;
+  border-radius: 4px;
+  z-index:1;
+  min-width:200px;
+}
+
+h1{
+  font-size:3.5rem;
+  line-height: 1.1;
+}
+
+button{
+  width:70px;
+  height:70px;
+   border-radius:35px;
+   border:none;
+   box-shadow:3px 3px 3px rgb(166, 7, 7);
+   text-transform: uppercase;
+   padding:10px;
+   font-size: 18px;
+   font-weight: 500;
+   font-family: inherit;
+   background-color: red;
+   cursor:pointer;
+   transition:all 0.25s linear;
+   border-color:#000000;
+   margin-right: 15px;
+}
+
+button:hover{
+  box-shadow:1px 1px 1px red;
+}
+button:focus,
+button:focus-visible{
+  outline:4px auto -webkit-focus-ring-color;
+}
+
